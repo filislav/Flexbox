@@ -7,15 +7,19 @@
     display:flex;
     border: 5px solid gray;
     flex-direction: row;
+    flex-wrap: wrap;
     min-height:100vh;
+    /* padding: 5px; */
+    gap:10px; /*расстояние между элементами  */
 }
 .flex_item{
     padding:10px;
     font: 900 60px "Roboto",sans-serif;
     color:white;
     text-align: center;
-    text-shadow:4px 2px 0 gray;
-    flex:1; 
+    text-shadow:4px 2px 0 gray; 
+    width: calc(33.33% - 10px);
+    /* margin: 5px; */
 }
 
 .item1 {
@@ -48,8 +52,8 @@
     background: linear-gradient(45deg, #e1eec3, #f05053);
 }  
 
-@media screen and (max-width:650px){
+/* @media screen and (max-width:650px){
     .flex_container{
         flex-direction: column;
     }
-}
+} */
